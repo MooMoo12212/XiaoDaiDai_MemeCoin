@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XiaoDaiDai - The Future of Memecoins</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff0099, #493240); /* vibrant color gradient */
+            color: white;
+            overflow: hidden;
+        }
+
+        .floating-words {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 8s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0);
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20vh;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #ff5757;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff002b;
+        }
+
+        .roadmap {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .roadmap h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .roadmap ul {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .roadmap li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .logo img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to XiaoDaiDai</h1>
+        <p>The revolutionary memecoin that combines fun and innovation. Join our community and be part of the future!</p>
+    </div>
+
+    <div class="logo">
+        <img src="/mnt/data/ifJteXBu_400x400.jpg" alt="XiaoDaiDai Logo">
+    </div>
+
+    <div class="roadmap">
+        <h2>Our Roadmap</h2>
+        <ul>
+            <li>Launch XiaoDaiDai coin and introduce our unique brand identity.</li>
+            <li>Expand the community and engage with key sponsors and partners.</li>
+            <li>Introduce a rewards program to benefit loyal holders and contributors.</li>
+            <li>Develop innovative tools and platforms to enhance token utility.</li>
+            <li>Grow globally with strategic marketing and partnerships.</li>
+        </ul>
+    </div>
+
+    <!-- Floating words -->
+    <div class="floating-words" style="top: 10%; left: 20%;">Decentralized</div>
+    <div class="floating-words" style="top: 40%; left: 60%;">Secure</div>
+    <div class="floating-words" style="top: 70%; left: 30%;">Innovative</div>
+    <div class="floating-words" style="top: 20%; left: 50%;">Community-Driven</div>
+    <div class="floating-words" style="top: 80%; left: 70%;">Future-Ready</div>
+    <div class="floating-words" style="top: 30%; left: 40%;">Childhood</div>
+    <div class="floating-words" style="top: 60%; left: 10%;">Moon</div>
+    <div class="floating-words" style="top: 50%; left: 80%;">Oink</div>
+
+    <script>
+        // Dynamic positioning for floating words
+        const floatingWords = document.querySelectorAll('.floating-words');
+        floatingWords.forEach(word => {
+            const randomDelay = Math.random() * 5; // Randomize start time
+            word.style.animationDelay = `${randomDelay}s`;
+            const randomX = Math.random() * 100; // Randomize X start position
+            word.style.left = `${randomX}%`;
+        });
+    </script>
+</body>
+</html>
